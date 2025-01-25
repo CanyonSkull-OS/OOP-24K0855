@@ -1,6 +1,7 @@
 //Omer Shahid
 //24k-0855
 
+//Task 1
 #include <iostream>
 using namespace std;
 
@@ -31,11 +32,38 @@ void takeNames(string Event1[], string Event2[]){
     }
 }
 
+
+//Task 2
+void checkParticipant(string Event1[], string Event2[]){
+    string name;
+    cout << "Enter Name: ";
+    cin >> name;
+    for (int i = 0; i < 5; i++)
+    {
+        if (Event1[i] == name){
+            cout << name << " is registered in Event 1" << endl;
+        }     
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        if (Event2[i] == name){
+            cout << name << " is registered in Event 2" << endl;
+        }     
+    }
+}
+
+
+
+
+
+
+
 int main(){
     string Event1[5];
     string Event2[5];
     takeNames(Event1, Event2);
     printArr(Event1, Event2);
-
+    checkParticipant(Event1, Event2);
     return 0;
 }
+
