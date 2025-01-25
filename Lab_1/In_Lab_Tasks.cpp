@@ -1,10 +1,9 @@
 //Omer Shahid
-//24k-0855
-
-//Task 1
+//24K-0855
 #include <iostream>
 using namespace std;
 
+//Task 1
 void printArr(string Event1[], string Event2[], int num1, int num2){
     cout << endl << "Event 1: " << endl;
     for (int i = 0; i < num1; i++)
@@ -100,7 +99,7 @@ void displayBarChart(int num1, int num2){
 }
 
 
-
+//Main
 int main(){
     string Event1[5], Event2[5];
     int num1, num2;
